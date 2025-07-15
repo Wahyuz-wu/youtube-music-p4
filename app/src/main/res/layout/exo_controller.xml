@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/exo_controller"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#80000000"
+             android:focusable="true"
+             android:focusableInTouchMode="true">
+
+    <LinearLayout
+            android:id="@+id/exo_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+        <ImageView
+                android:id="@id/exo_rew"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/exo_controls_rewind_description"
+                android:padding="8dp"
+                android:src="@drawable/exo_icon_rewind" />
+
+        <ImageView
+                android:id="@id/exo_play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/exo_controls_play_description"
+                android:padding="8dp"
+                android:src="@drawable/exo_icon_play" />
+
+        <ImageView
+                android:id="@id/exo_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/exo_controls_pause_description"
+                android:padding="8dp"
+                android:src="@drawable/exo_icon_pause"
+                android:visibility="gone" />
+
+        <ImageView
+                android:id="@id/exo_ffwd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/exo_controls_fastforward_description"
+                android:padding="8dp"
+                android:src="@drawable/exo_icon_fastforward" />
+
+    </LinearLayout>
+</FrameLayout>
